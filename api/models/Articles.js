@@ -8,6 +8,12 @@
 module.exports = {
 
   attributes: {
+    title:{
+      type: 'string'
+    },
+    body:{
+      type: 'string'
+    }
 
   },
   datastore:'mongodb'
