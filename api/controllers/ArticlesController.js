@@ -6,7 +6,13 @@
  */
 
 module.exports = {
-  
-
+  list:function(req, res){
+      Articles.find({}).exec(function(err, articles){
+        if(err){
+            res.send(500, {error: 'Database Error'});
+        }
+        res.view('list', {articles:articles});
+      });
+  }
 };
 
