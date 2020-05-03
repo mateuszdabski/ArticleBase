@@ -21,6 +21,8 @@ module.exports.routes = {
 
   '/': { view: 'pages/homepage' },
   'post /articles/delete/:id' : 'ArticlesController.delete',
+  'get /articles/edit/:id': 'ArticlesController.edit',
+  'post /articles/update/:id': 'ArticlesController.update', 
 
   /***************************************************************************
   *                                                                          *
